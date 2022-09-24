@@ -1,12 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>github tut</title>
+    <title>ThenX</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset */
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url("img/pic3.png");
+            font-family: 'Baloo Paaji 2', 'cursive';
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 34px;
+            top: 20;
+        }
+
+        .left img {
+            width: 120px;
+            height: 120px;
+            filter: invert(100%);
+            /* to invert the color of images*/
+        }
+
+        .left div {
+            text-align: center;
+            color: darkorange;
+            font-size: 44px;
+            line-height: 0px;
+        }
+
+        .mid {
+
+            width: 40%;
+            margin: 20px auto;
+            /* border: 2px solid rgb(99, 119, 13); */
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            display: inline-block;
+            /* border: 2px solid blueviolet; */
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar li a {
+            color: darkorange;
+            text-decoration: none;
+            padding: 34px 24px;
+            font-size: 25px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: chocolate;
+        }
+
+        .btn {
+            font-family: 'Baloo Paaji 2', 'cursive';
+            margin: 0px 10px;
+            background-color: black;
+            color: darkorange;
+            padding: 4px 14px;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 7px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(98, 53, 20);
+        }
+
+        .container {
+            /* border: 2px solid white; */
+            margin: 175px 58px;
+            padding: 68px 56px;
+            border-radius: 20px;
+            width: 33%;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .form-group input {
+            font-family: 'Baloo Paaji 2', 'cursive';
+            text-align: center;
+            border: 2px solid white;
+            width: 300px;
+            padding: 2px 2px;
+            margin: 11px auto;
+            display: block;
+            font-size: 16px;
+            border-radius: 7px;
+        }
+
+        .container button {
+            display: block;
+            width: 19%;
+            margin: 20px auto;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/pic2.png" alt="">
+            <div>ThenX</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Sign In</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join Now For Best Offers</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
 </body>
+
 </html>
